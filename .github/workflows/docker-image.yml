@@ -25,7 +25,8 @@ jobs:
        make
 
     - name: Upload da stuff
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
        name: w64devkit-binaries
        path: ./w64devkit/bin
+       pattern: my-artifact-*
