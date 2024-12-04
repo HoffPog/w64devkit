@@ -22,7 +22,7 @@ jobs:
       run: |
        git clone https://github.com/skeeto/w64devkit.git
        cd w64devkit
-       docker build -t w64devkit
+       docker build -t w64devkit .
        docker run --rm w64devkit >w64devkit-x64.exe
 
     - name: Upload da stuff
